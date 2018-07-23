@@ -122,16 +122,12 @@ Polymer({
         messagingSenderId: messagingSenderId
       }];
 
-      if (firebase, init, name) {
-        // init.push(name);
-        firebase.initializeApp.apply(firebase, init, name);
-      } else if(firebase, init){
-          firebase.initializeApp.apply(firebase, init, name);
+      if (name) {
+        init.push(name);
       }
 
-
+      firebase.initializeApp.apply(firebase, init);
       this.fire('firebase-app-initialized');
-      console.log(init);
     } else {
       return null;
     }
