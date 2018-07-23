@@ -61,7 +61,7 @@ import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
 import './firebase-common-behavior.js';
-import './firebase-auth-script.js';
+import 'firebase/firebase-auth.js';
 
 Polymer({
 

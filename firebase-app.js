@@ -17,11 +17,11 @@ import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import { firebase } from '@firebase/app';
 
-import './firebase-app-script.js';
-import './firebase-database-script.js';
-import './firebase-auth-script.js';
-import './firebase-storage-script.js';
-import './firebase-messaging-script.js';
+import 'firebase/firebase-app.js';
+import 'firebase/firebase-database.js';
+import 'firebase/firebase-auth.js';
+import 'firebase/firebase-storage.js';
+import 'firebase/firebase-messaging.js';
 
 
 /**

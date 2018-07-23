@@ -11,7 +11,7 @@ import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
 import './firebase-common-behavior.js';
-import './firebase-database-script.js';
+import 'firebase/firebase-database.js';
 
 
 // Polymer({

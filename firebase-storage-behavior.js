@@ -10,7 +10,7 @@ import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
 import './firebase-common-behavior.js';
-import './firebase-storage-script.js';
+import 'firebase/firebase-storage.js';
 
 /** @polymerBehavior Polymer.FirebaseStorageBehavior */
 Polymer.FirebaseStorageBehaviorImpl = {

@@ -9,7 +9,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
-import './firebase-app-script.js';
+import 'firebase/firebase-app.js';
 
 // Polymer({
 //
