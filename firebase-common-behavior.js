@@ -26,7 +26,7 @@ import 'firebase/firebase-app.js';
 
 
 /** @polymerBehavior Polymer.FirebaseCommonBehavior */
-Polymer.FirebaseCommonBehaviorImpl = {
+export const FirebaseCommonBehaviorImpl = {
   properties: {
 
 
@@ -84,7 +84,7 @@ Polymer.FirebaseCommonBehaviorImpl = {
 };
 
 /** @polymerBehavior */
-Polymer.FirebaseCommonBehavior = [
+export const FirebaseCommonBehavior = [
   AppNetworkStatusBehavior,
-  Polymer.FirebaseCommonBehaviorImpl
+  FirebaseCommonBehaviorImpl
 ];

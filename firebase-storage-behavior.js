@@ -7,13 +7,12 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 */
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
-import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
-import './firebase-common-behavior.js';
+import { FirebaseCommonBehavior } from './firebase-common-behavior.js';
 import 'firebase/firebase-storage.js';
 
 /** @polymerBehavior Polymer.FirebaseStorageBehavior */
-Polymer.FirebaseStorageBehaviorImpl = {
+export const FirebaseStorageBehaviorImpl = {
   properties: {
     /**
       * Firebase storage instance
@@ -109,7 +108,7 @@ Polymer.FirebaseStorageBehaviorImpl = {
 };
 
 /** @polymerBehavior */
-Polymer.FirebaseStorageBehavior = [
-  Polymer.FirebaseCommonBehavior,
-  Polymer.FirebaseStorageBehaviorImpl
+export const FirebaseStorageBehavior = [
+  FirebaseCommonBehavior,
+  FirebaseStorageBehaviorImpl
 ];

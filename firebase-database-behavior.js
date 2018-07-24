@@ -8,9 +8,8 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
-import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
-import './firebase-common-behavior.js';
+import { FirebaseCommonBehavior } from './firebase-common-behavior.js';
 import 'firebase/firebase-database.js';
 
 
@@ -25,7 +24,7 @@ import 'firebase/firebase-database.js';
 //   properties: {
 
 /** @polymerBehavior Polymer.FirebaseDatabaseBehavior */
-Polymer.FirebaseDatabaseBehaviorImpl = {
+export const FirebaseDatabaseBehaviorImpl = {
   properties: {
     db: {
       type: Object,
@@ -131,8 +130,8 @@ Polymer.FirebaseDatabaseBehaviorImpl = {
 };
 
 /** @polymerBehavior */
-Polymer.FirebaseDatabaseBehavior = [
-  Polymer.AppStorageBehavior,
-  Polymer.FirebaseCommonBehavior,
-  Polymer.FirebaseDatabaseBehaviorImpl
+export const FirebaseDatabaseBehavior = [
+  AppStorageBehavior,
+  FirebaseCommonBehavior,
+  FirebaseDatabaseBehaviorImpl
 ];

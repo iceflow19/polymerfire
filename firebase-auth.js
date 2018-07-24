@@ -60,7 +60,7 @@ be a problem.
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
-import './firebase-common-behavior.js';
+import { FirebaseCommonBehavior } from './firebase-common-behavior.js';
 import 'firebase/firebase-auth.js';
 
 Polymer({
@@ -68,7 +68,7 @@ Polymer({
   is: 'firebase-auth',
 
   behaviors: [
-    Polymer.FirebaseCommonBehavior
+    FirebaseCommonBehavior
   ],
 
   properties: {

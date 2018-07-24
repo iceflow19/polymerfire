@@ -10,7 +10,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
-import './firebase-storage-behavior.js';
+import { FirebaseStorageBehavior } from './firebase-storage-behavior.js';
 
 /**
 * The firebase-storage-upload-task element is an easy way to track upload tasks made
@@ -108,7 +108,7 @@ Polymer({
   },
 
   behaviors: [
-    Polymer.FirebaseStorageBehavior
+    FirebaseStorageBehavior
   ],
 
   /**

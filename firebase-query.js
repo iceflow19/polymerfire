@@ -54,13 +54,13 @@ Polymer({
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
-import './firebase-database-behavior.js';
+import { FirebaseDatabaseBehavior } from './firebase-database-behavior.js';
 
 Polymer({
   is: 'firebase-query',
 
   behaviors: [
-    Polymer.FirebaseDatabaseBehavior
+    FirebaseDatabaseBehavior
   ],
 
   properties: {
