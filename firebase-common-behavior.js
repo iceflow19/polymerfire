@@ -8,6 +8,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
+import { AppNetworkStatusBehavior } from '@polymer/app-storage';
 
 import 'firebase/firebase-app.js';
 
@@ -84,6 +85,6 @@ Polymer.FirebaseCommonBehaviorImpl = {
 
 /** @polymerBehavior */
 Polymer.FirebaseCommonBehavior = [
-  Polymer.AppNetworkStatusBehavior,
+  AppNetworkStatusBehavior,
   Polymer.FirebaseCommonBehaviorImpl
 ];
