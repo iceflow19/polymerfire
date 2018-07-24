@@ -8,7 +8,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
-import { AppNetworkStatusBehavior } from '@polymer/app-storage';
+import { AppNetworkStatusBehavior } from '@polymer/app-storage/app-network-status-behavior';
 
 import 'firebase/firebase-app.js';
 
