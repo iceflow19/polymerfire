@@ -68,7 +68,7 @@ import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
 import { FirebaseCommonBehavior } from './firebase-common-behavior.js'; 
-import 'firebase/firebase-messaging.js';
+import '../firebase/firebase-messaging.js';
 var stateMap = {};
 
 /**
