@@ -53,7 +53,6 @@ Polymer({
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
-
 import { FirebaseDatabaseBehavior } from './firebase-database-behavior.js';
 
 Polymer({
