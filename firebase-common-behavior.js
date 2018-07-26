@@ -5,10 +5,11 @@ Use of this source code is governed by a BSD-style
 license that can be found in the LICENSE file or at
 https://github.com/firebase/polymerfire/blob/master/LICENSE
 */
+
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
 import { AppNetworkStatusBehavior } from '@polymer/app-storage/app-network-status-behavior';
-import 'firebase/firebase-app.js';
+import { firebase } from './import-firebase';
 
 // Polymer({
 //
@@ -61,8 +62,8 @@ export const FirebaseCommonBehaviorImpl = {
       var self = this;
       window.addEventListener('firebase-app-initialized',
           function onFirebaseAppInitialized(event) {
-            window.removeEventListener(
-                'firebase-app-initialized', onFirebaseAppInitialized);
+            window.removeEventListener('firebase-app-initialized', onFirebaseAppInitialized);
+            console.log(event);
             self.__appNameChanged(self.appName);
           });
     }
