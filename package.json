@@ -55,6 +55,6 @@
   ],
   "license": "BSD-3-Clause",
   "main": "polymerfire.js",
-  "name": "polymerfire3",
+  "name": "polymerfire",
   "version": "3.0.6"
 }
