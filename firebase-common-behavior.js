@@ -63,7 +63,6 @@ export const FirebaseCommonBehaviorImpl = {
       window.addEventListener('firebase-app-initialized',
           function onFirebaseAppInitialized(event) {
             window.removeEventListener('firebase-app-initialized', onFirebaseAppInitialized);
-            console.log(event);
             self.__appNameChanged(self.appName);
           });
     }
