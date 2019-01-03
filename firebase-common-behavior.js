@@ -9,7 +9,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
 import { AppNetworkStatusBehavior } from '@polymer/app-storage/app-network-status-behavior';
-import { firebase } from './import-firebase';
+import firebase from 'firebase/app';
 
 // Polymer({
 //
@@ -63,7 +63,6 @@ export const FirebaseCommonBehaviorImpl = {
       window.addEventListener('firebase-app-initialized',
           function onFirebaseAppInitialized(event) {
             window.removeEventListener('firebase-app-initialized', onFirebaseAppInitialized);
-            console.log(event);
             self.__appNameChanged(self.appName);
           });
     }

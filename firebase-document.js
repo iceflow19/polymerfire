@@ -9,6 +9,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import { FirebaseDatabaseBehavior } from './firebase-database-behavior.js';
+import firebase from 'firebase/app';
 
 /**
  * The firebase-document element is an easy way to interact with a firebase
