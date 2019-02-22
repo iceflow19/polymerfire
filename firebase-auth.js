@@ -59,9 +59,9 @@ be a problem.
 // Polymer imports
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
-import firebase from 'firebase/app';
+import firebase from '@firebase/app';
 import { FirebaseCommonBehavior } from './firebase-common-behavior.js';
-import 'firebase/auth';
+import '@firebase/auth';
 
 Polymer({
 

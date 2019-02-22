@@ -67,7 +67,7 @@ call `.activate()` on the element once you've
 import '@polymer/polymer/polymer-legacy.js';
 import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import { FirebaseCommonBehavior } from './firebase-common-behavior.js'; 
-import 'firebase/messaging';
+import '@firebase/messaging';
 var stateMap = {};
 
 /**
