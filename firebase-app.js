@@ -21,7 +21,8 @@ import '@firebase/database';
 import '@firebase/auth';
 import '@firebase/storage';
 import '@firebase/messaging';
-
+import '@firebase/functions';
+import '@firebase/analytics';
 
 /**
  * The firebase-app element is used for initializing and configuring your
@@ -107,18 +108,24 @@ Polymer({
     app: {
       type: Object,
       notify: true,
-      computed: '__computeApp(name, apiKey, authDomain, databaseUrl, storageBucket, messagingSenderId)'
-    }
+      computed: '__computeApp(name, apiKey, authDomain, databaseUrl, storageBucket, messagingSenderId, projectId, appId, measurementId)'
+    },
+    projectId: { type: String, value: null },
+    appId: { type: String, value: null },
+    measurementId:{ type: String, value: null },
   },
 
-  __computeApp: function(name, apiKey, authDomain, databaseUrl, storageBucket, messagingSenderId) {
+  __computeApp: function(name, apiKey, authDomain, databaseUrl, storageBucket, messagingSenderId, projectId, appId, measurementId) {
     if (apiKey && authDomain && databaseUrl) {
       var init = [{
         apiKey: apiKey,
         authDomain: authDomain,
         databaseURL: databaseUrl,
         storageBucket: storageBucket,
-        messagingSenderId: messagingSenderId
+        messagingSenderId: messagingSenderId,
+        projectId: projectId,
+        appId: appId,
+        measurementId: measurementId,
       }];
 
       if (name) {
