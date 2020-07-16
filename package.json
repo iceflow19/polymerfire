@@ -36,7 +36,7 @@
   "dependencies": {
     "@polymer/app-storage": "^3.0.0-pre.21",
     "@polymer/polymer": "^3.0.2",
-    "firebase": "^5.0.0"
+    "firebase": "^7.0.0"
   },
   "deprecated": false,
   "description": "Polymer Web Components for Firebase",
